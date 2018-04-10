@@ -1,0 +1,22 @@
+[Unit]
+Description=Coin2College's distributed currency daemon
+After=network.target
+
+[Service]
+User=coin2collegecore
+Group=coin2collegecore
+
+Type=forking
+PIDFile=/var/lib/coin2colleged/coin2colleged.pid
+ExecStart=/usr/bin/coin2colleged -daemon -pid=/var/lib/coin2colleged/coin2colleged.pid \
+-conf=/etc/coin2collegecore/coin2college.conf -datadir=/var/lib/coin2colleged -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

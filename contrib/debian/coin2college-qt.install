@@ -1,0 +1,6 @@
+usr/local/bin/coin2college-qt usr/bin
+share/pixmaps/coin2college32.xpm usr/share/pixmaps
+share/pixmaps/coin2college16.xpm usr/share/pixmaps
+share/pixmaps/coin2college128.png usr/share/pixmaps
+debian/coin2college-qt.desktop usr/share/applications
+debian/coin2college-qt.protocol usr/share/kde4/services/

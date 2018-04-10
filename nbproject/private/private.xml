@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <code-assistance-data xmlns="http://www.netbeans.org/ns/make-project-private/1">
+        <code-model-enabled>true</code-model-enabled>
+    </code-assistance-data>
+    <data xmlns="http://www.netbeans.org/ns/make-project-private/1">
+        <activeConfTypeElem>0</activeConfTypeElem>
+        <activeConfIndexElem>0</activeConfIndexElem>
+    </data>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/media/sf_jerry/coindev/coin2college/src/secp256k1/src/gen_context.c</file>
+            <file>file:/media/sf_jerry/coindev/coin2college/src/chainparams.cpp</file>
+            <file>file:/media/sf_jerry/coindev/coin2college/src/validation.cpp</file>
+            <file>file:/media/sf_jerry/coindev/coin2college/src/init.cpp</file>
+            <file>file:/media/sf_jerry/coindev/coin2college/src/rpc/misc.cpp</file>
+            <file>file:/media/sf_jerry/coindev/coin2college/src/txmempool.cpp</file>
+            <file>file:/media/sf_jerry/coindev/coin2college/src/masternode.cpp</file>
+            <file>file:/media/sf_jerry/coindev/coin2college/src/primitives/block.h</file>
+            <file>file:/media/sf_jerry/coindev/coin2college/src/miner.cpp</file>
+            <file>file:/media/sf_jerry/coindev/coin2college/src/test/test_coin2college.cpp</file>
+            <file>file:/media/sf_jerry/coindev/coin2college/src/rpc/server.cpp</file>
+            <file>file:/media/sf_jerry/coindev/coin2college/src/rpc/mining.cpp</file>
+            <file>file:/media/sf_jerry/coindev/coin2college/src/activemasternode.cpp</file>
+            <file>file:/media/sf_jerry/coindev/coin2college/src/coin2colleged.cpp</file>
+            <file>file:/media/sf_jerry/coindev/coin2college/src/pow.cpp</file>
+            <file>file:/media/sf_jerry/coindev/coin2college/src/pow.h</file>
+        </group>
+    </open-files>
+</project-private>

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Coin2College
+Comment=Coin2College P2P Cryptocurrency
+Comment[fr]=Coin2College, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Coin2College, eşten eşe kriptografik sanal para birimi
+Exec=coin2college-qt %u
+Terminal=false
+Type=Application
+Icon=coin2college128
+MimeType=x-scheme-handler/coin2college;
+Categories=Office;Finance;
