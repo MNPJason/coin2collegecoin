@@ -97,6 +97,8 @@
       <df name="src">
         <df name=".deps">
         </df>
+        <df name=".libs">
+        </df>
         <df name="bench">
           <df name=".deps">
           </df>
@@ -132,8 +134,6 @@
         </df>
         <df name="crypto">
           <df name=".deps">
-          </df>
-          <df name=".libs">
           </df>
           <df name="Lyra2RE">
             <df name=".deps">
@@ -436,6 +436,8 @@
           </df>
           <df name="test">
             <df name=".deps">
+            </df>
+            <df name=".libs">
             </df>
             <in>compattests.cpp</in>
             <in>compattests.h</in>
@@ -776,9 +778,12 @@
             <in>alertTests.raw.h</in>
             <in>base58_encode_decode.json.h</in>
             <in>base58_keys_invalid.json.h</in>
+            <in>base58_keys_valid.json.h</in>
             <in>bip39_vectors.json.h</in>
             <in>script_tests.json.h</in>
+            <in>sighash.json.h</in>
             <in>tx_invalid.json.h</in>
+            <in>tx_valid.json.h</in>
           </df>
           <in>DoS_tests.cpp</in>
           <in>accounting_tests.cpp</in>
@@ -1122,15 +1127,10 @@
       <runprofile version="9">
         <runcommandpicklist>
           <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
-          <runcommandpicklistitem>"/media/sf_jerry/coindev/coin2college/src/coin2colleged -testnet"</runcommandpicklistitem>
-          <runcommandpicklistitem>"/media/sf_jerry/coindev/coin2college/src/coin2colleged"</runcommandpicklistitem>
-          <runcommandpicklistitem>"/media/sf_jerry/coindev/coin2college/src/coin2colleged" -daemon</runcommandpicklistitem>
-          <runcommandpicklistitem>"/media/sf_jerry/coindev/coin2college/src/coin2colleged" -testnet</runcommandpicklistitem>
-          <runcommandpicklistitem>"/media/sf_jerry/coindev/coin2college/src/coin2colleged" -testnet -gen</runcommandpicklistitem>
         </runcommandpicklist>
-        <runcommand>"/media/sf_jerry/coindev/coin2college/src/coin2colleged" -testnet -gen</runcommand>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
         <rundir>.</rundir>
-        <buildfirst>true</buildfirst>
+        <buildfirst>false</buildfirst>
         <terminal-type>0</terminal-type>
         <remove-instrumentation>0</remove-instrumentation>
         <environment>

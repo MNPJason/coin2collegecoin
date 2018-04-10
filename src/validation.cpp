@@ -1241,12 +1241,12 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
     if(nPrevHeight < 100) //start phase
         return 0;
         
-    nSubsidyBase = 3;	//reward 3 C2C / 6 sec	
+    nSubsidyBase = 60;	//reward 60 C2C / 120 sec	
 	
     CAmount nSubsidy = nSubsidyBase * COIN;
 
     //supply total 100,000,000 C2C
-    if(nPrevHeight >= 33333333)
+    if(nPrevHeight >= 1666766)
         nSubsidy = 0;    
 
     return nSubsidy;

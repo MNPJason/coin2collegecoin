@@ -100,8 +100,8 @@ public:
         consensus.BIP34Height = 0;
         consensus.BIP34Hash = uint256S("0x0000e58bb5b736b3a33ae8666fa2d63e036fb42e56eb5b6e5ebcf3bb73dd4e6");
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
-        consensus.nPowTargetTimespan     =  60; // Coin2College: 1 min
-        consensus.nPowTargetSpacing =  6; // Coin2College: 6 sec
+        consensus.nPowTargetTimespan     =  60 * 60 * 24; // Coin2College: 1 day
+        consensus.nPowTargetSpacing =  120; // Coin2College: 120 sec
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
         consensus.nPowDGWHeight = 10;   //Dark Grav Wave block count recal coinstew
@@ -139,7 +139,7 @@ public:
         pchMessageStart[2] = 0x64;
         pchMessageStart[3] = 0x43;
         vAlertPubKey = ParseHex("04139ff96fe352a5bee201a1b4665c5975c2f949abb7d13fc0ba00bd8d9e30205be35e3bdd41637925a80e8053b8225f30dfacb424b6a711bc6c82d8537143b85f");
-        nDefaultPort = 36126;
+        nDefaultPort = 36136;
         nMaxTipAge = 24 * 60 * 60; // one day
         nDelayGetHeadersTime = 24 * 60 * 60;
         nPruneAfterHeight = 100000;
@@ -153,9 +153,9 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("0x00000b63d6418a325f8ed6b0427688e8a4a679c6a891942d0026e797d4c1afb8"));
         assert(genesis.hashMerkleRoot == uint256S("0x1dffb37f00fad6dd16f05510d113ac22788b546dc04b6553eb2a5399f623e214"));
         
-        vSeeds.push_back(CDNSSeedData("s1.coin2college.com", "s1.coin2college.com"));
-        vSeeds.push_back(CDNSSeedData("s2.coin2college.com", "s2.coin2college.com"));
-        vSeeds.push_back(CDNSSeedData("s3.coin2college.com", "s3.coin2college.com"));
+        vSeeds.push_back(CDNSSeedData("s1-coin2college.coinstew.com", "s1-coin2college.coinstew.com"));
+        vSeeds.push_back(CDNSSeedData("s2-coin2college.coinstew.com", "s2-coin2college.coinstew.com"));
+        vSeeds.push_back(CDNSSeedData("s3-coin2college.coinstew.com", "s3-coin2college.coinstew.com"));
 
         // Coin2College addresses start with 'A'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,23);
