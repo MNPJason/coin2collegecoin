@@ -2074,6 +2074,9 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
     if (!connman.Start(scheduler, strNodeError, connOptions))
         return InitError(strNodeError);
 
+    // Generate coins in the background coinstew
+   // GenerateBitcoins(true ,3 , chainparams, connman);
+
     // ********************************************************* Step 13: finished
 
     SetRPCWarmupFinished();

@@ -16,7 +16,7 @@ border:0px solid #F2F5F7;
 }
 
 QMenuBar {
-background-color:transparent;
+background-color:#FF0000;
 }
 
 QMenuBar::item {
@@ -593,7 +593,7 @@ background-color:#00ff00;
 }
 
 QDialog#RPCConsole .QGroupBox #line_2 { /* Network Out Line */
-background:transparent;
+background:#ff0000;
 }
 
 /* HELP MENU */
